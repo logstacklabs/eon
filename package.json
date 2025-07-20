@@ -1,0 +1,61 @@
+{
+    "name": "@logstack/eon",
+    "version": "1.0.0",
+    "description": "A refined collection of neutral tones with subtle accents for modern UI design.",
+    "keywords": [
+        "design-system",
+        "color-palette",
+        "css",
+        "sass",
+        "scss",
+        "json",
+        "css-variables",
+        "logstack",
+        "eon",
+        "eon-colors",
+        "ui"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Muhammed A. Senghore",
+        "email": "logstacklabs@gmail.com",
+        "url": "https://www.msio.me"
+    },
+    "type": "module",
+    "main": "./src/index.js",
+    "types": "./dist/eon.d.ts",
+    "exports": {
+        ".": "./src/index.js",
+        "./inject": "./src/inject.js"
+    },
+    "files": [
+        "src/",
+        "dist/",
+        "docs/",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "node scripts/generate-exports.js",
+        "prepublishOnly": "npm run build",
+        "prepack": "npm run build",
+        "test": "vitest",
+        "test:run": "vitest run",
+        "test:watch": "vitest --watch",
+        "test:coverage": "vitest run --coverage",
+        "postinstall": "echo 'EON palette installed! SEE: `https://github.com/logstacklabs/eon#readme` for usage guide'"
+    },
+    "homepage": "https://github.com/logstacklabs/eon#readme",
+    "bugs": {
+        "url": "https://github.com/logstacklabs/eon/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/logstacklabs/eon.git"
+    },
+    "devDependencies": {
+        "@vitest/coverage-v8": "^3.2.4",
+        "jsdom": "^26.1.0",
+        "vi": "^1.0.0",
+        "vitest": "^3.2.4"
+    }
+}

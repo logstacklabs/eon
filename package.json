@@ -42,7 +42,7 @@
         "test:run": "vitest run",
         "test:watch": "vitest --watch",
         "test:coverage": "vitest run --coverage",
-        "postinstall": "echo 'EON palette installed! SEE: `https://github.com/logstacklabs/eon#readme` for usage guide'"
+        "postinstall": "echo 'EON palette installed! SEE: `https://github.com/logstacklabs/eon#readme` for usage guide.'"
     },
     "homepage": "https://github.com/logstacklabs/eon#readme",
     "bugs": {

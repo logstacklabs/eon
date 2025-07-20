@@ -1,0 +1,9 @@
+.idea/
+*.log
+.DS_Store
+.eslintrc.js
+vitest.config.js
+package-lock.json
+tests/
+__tests__/
+node_modules/

@@ -1,0 +1,19 @@
+./.idea
+# Default ignored files
+.idea/shelf/
+.idea/workspace.xml
+# Editor-based HTTP Client requests
+.idea/httpRequests/
+# Datasource local storage ignored files
+.idea/dataSources/
+.idea/dataSources.local.xml
+
+package-lock.json
+vitest.config.js
+.eslintrc.js
+.DS_Store
+*.log
+.idea/
+tests/
+__tests__/
+node_modules/

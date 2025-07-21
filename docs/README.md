@@ -94,15 +94,21 @@ button {
 @use 'sass:color';
 @use '@logstack/eon/scss' as eon;
 
-@include eon.eon-palette();
+@include eon.eon-colors();
 
 .button {
     background: eon.eon-color('teal'); //? var(--eo-teal);
     border: 2px solid eon.eon-color-value('coal'); //? #2B2B2B
-  
+
     &:hover {
         background: color.scale(eon.eon-color-value('teal'), $green: 44%);
     }
+}
+
+@use 'sass:map';
+
+.tmp { 
+    color: map.get($eon-color-palette, 'sigil');
 }
 ```
 
@@ -152,8 +158,8 @@ const isEonColor = isValidEonColor('#2a9d8f'); // true
 
 ```javascript
 // Core functions
-getEonColor(colorName: string): string[] | null
-getEonGroup(groupName: string): Record<string, string>
+getEonColor(colorName: string): string | null
+getEonGroup(groupName: string): Record<string, string> | null
 
 getAllColorNames(): string[]
 getAllGroupNames(): string[]
@@ -198,8 +204,10 @@ EON was made possible with help from:
 - [Canva](https://www.canva.com/colors/color-wheel/)
 - [Shields.io](https://shields.io)
 - [Coolors.co](https://coolors.co)
+- [SASS/SCSS](https://sass-lang.com)
 - [Vitest Docs](https://vitest.dev/guide/)
-
+- [MIT](https://opensource.org/license/mit)
+- [TS Docs](https://www.typescriptlang.org/docs/)
 ---
 
 > "Colors are the smiles of nature." - Leigh Hunt

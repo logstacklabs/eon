@@ -23,22 +23,31 @@
     },
     "type": "module",
     "main": "./src/index.js",
+    "module": "./src/index.js",
     "types": "./dist/eon.d.ts",
     "exports": {
         ".": "./src/index.js",
-        "./inject": "./src/inject.js"
+        "./inject": "./src/inject.js",
+        "./css": "./dist/eon.css",
+        "./sass": "./dist/eon.scss",
+        "./scss": "./dist/eon.scss",
+        "./json": "./dist/eon.json",
+        "./types": "./dist/eon.d.ts"
     },
     "files": [
         "src/",
         "dist/",
         "docs/",
+        "scripts/",
         "LICENSE"
     ],
+    "sideEffects": false,
     "scripts": {
         "build": "node scripts/generate-exports.js",
         "prepublishOnly": "npm run build",
         "prepack": "npm run build",
         "test": "vitest",
+        "test:types": "tsd",
         "test:run": "vitest run",
         "test:watch": "vitest --watch",
         "test:coverage": "vitest run --coverage",
@@ -52,10 +61,18 @@
         "type": "git",
         "url": "git+https://github.com/logstacklabs/eon.git"
     },
+    "engines": {
+        "node": ">=24.3.0"
+    },
     "devDependencies": {
         "@vitest/coverage-v8": "^3.2.4",
         "jsdom": "^26.1.0",
+        "tsd": "^0.32.0",
         "vi": "^1.0.0",
         "vitest": "^3.2.4"
+    },
+    "funding": {
+        "type": "individual",
+        "url": "https://github.com/sponsors/logstacklabs"
     }
 }

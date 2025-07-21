@@ -1,0 +1,143 @@
+// EON COLOR PALETTE <@logstack/eon> - v1.0.0
+// ©️ 2025 by Logstack Labs, licensed under MIT
+// A refined collection of neutral tones with subtle accents for modern UI design.
+//
+// Generated: 2025-07-21T20:50:16.119Z
+//
+// AUTHOR: Muhammed A. Senghore <logstacklabs@gmail.com>
+// LINKS:
+//    - https://www.msio.me
+//    - https://logstack.dev/
+//    - https://github.com/logstacklabs/
+//
+// REFERENCES/ACKNOWLEDGEMENTS:
+//    - https://coolors.co/
+//    - https://sass-lang.com
+//    - https://opensource.org/license/mit
+//    - https://sass-lang.com/documentation/variables/
+//    - https://www.w3schools.com/sass/sass_variables.php
+@use 'sass:map';
+@use 'sass:meta';
+
+$eon-color-palette: (
+    'black': #000000,
+    'pitch': #090909,
+    'night': #121212,
+    'coal': #2b2b2b,
+    'graphite': #4a4a4a,
+    'storm': #4a5759,
+    'steel': #5a646e,
+    'olive': #4f5851,
+    'sigil': #4D4153,
+    'khaki': #6a5e52,
+    'moss': #7b8165,
+    'mauve': #9a8c98,
+    'taupe': #a59e8c,
+    'latte': #d4a373,
+    'cream': #eaddca,
+    'mint': #ecffdc,
+    'sand': #f1eee4,
+    'petal': #ffe4ee,
+    'blush': #fff0fb,
+    'smoke': #f5f5f5,
+    'powder': #faf9f6,
+    'white': #ffffff,
+    'coral': #e76f51,
+    'terra': #d65a3a,
+    'peach': #ffa69e,
+    'candy': #ffc4d6,
+    'mustard': #ffde5c,
+    'teal': #2a9d8f
+);
+
+// EON Color groups: <map>
+$eon-groups: (
+    'deepAnchors': (
+        'black': #000000,
+        'pitch': #090909,
+        'night': #121212,
+        'coal': #2b2b2b
+	),
+    'stoneNeutrals': (
+        'graphite': #4a4a4a,
+        'storm': #4a5759,
+        'steel': #5a646e
+	),
+    'earthyTones': (
+        'olive': #4f5851,
+        'khaki': #6a5e52,
+        'moss': #7b8165,
+        'taupe': #a59e8c,
+        'latte': #d4a373
+	),
+    'dustyChromatics': (
+        'sigil': #4D4153,
+        'mauve': #9a8c98
+	),
+    'softNeutrals': (
+        'cream': #eaddca,
+        'sand': #f1eee4,
+        'smoke': #f5f5f5,
+        'powder': #faf9f6,
+        'white': #ffffff
+	),
+    'etherealPastels': (
+        'mint': #ecffdc,
+        'petal': #ffe4ee,
+        'blush': #fff0fb,
+        'candy': #ffc4d6,
+        'peach': #ffa69e
+	),
+    'vibrantAccents': (
+        'coral': #e76f51,
+        'terra': #d65a3a,
+        'mustard': #ffde5c,
+        'teal': #2a9d8f
+	)
+);
+
+// @description A mixin for generating CSS custom properties for all colors
+// @param {String} $selector - Selector to apply properties to (default: ':root')
+@mixin eon-colors($selector: ':root') {
+    #{$selector} {
+        @each $name, $color in $eon-color-palette {
+            --eo-#{$name}: #{$color};
+        }
+    }
+}
+
+// @description Get a color as a CSS custom property
+// @param {String} $name - Color name
+// @return {String} CSS custom property
+@function eon-color($name) {
+    @if not map.has-key($eon-color-palette, $name) {
+        @error "Invalid color: '#{$name}'. Available colors: #{map.keys($eon-color-palette)}";
+    }
+    @return var(--eo-#{$name});
+}
+
+// @description Get a color's hex value directly
+// @param {String} $name - Color name
+// @return {Color} Hex color value
+@function eon-color-value($name) {
+    @if not map.has-key($eon-color-palette, $name) {
+        @error "Invalid color: '#{$name}'. Available colors: #{map.keys($eon-color-palette)}";
+    }
+    @return map.get($eon-color-palette, $name);
+}
+
+// @description Get colors from a specific group
+// @param {String} $group-name - Group name
+// @param {String} $type - Return type, default 'null'
+// @return {map} A map of color name and their values
+// @return {List} A list of hex values of colors in the group if the type parameter is specified.
+@function eon-group($group-name, $type: null) {
+    @if not map.has-key($eon-groups, $group-name) {
+        @error "Invalid group: '#{$group-name}'. Available groups: #{map.keys($eon-groups)}";
+    }
+    $group: map.get($eon-groups, $group-name);
+    @if $type and ($type == values) {
+        @return  map.values($group);
+    }
+    @return $group;
+}

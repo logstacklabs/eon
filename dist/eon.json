@@ -1,0 +1,90 @@
+{
+    "version": "1.0.0",
+    "name": "@logstack/eon",
+    "description": "A refined collection of neutral tones with subtle accents for modern UI design.",
+    "license": "MIT",
+    "author": {
+        "name": "Muhammed A. Senghore",
+        "email": "logstacklabs@gmail.com",
+        "url": "https://www.msio.me"
+    },
+    "EonColors": {
+        "black": "#000000",
+        "pitch": "#090909",
+        "night": "#121212",
+        "coal": "#2b2b2b",
+        "graphite": "#4a4a4a",
+        "storm": "#4a5759",
+        "steel": "#5a646e",
+        "olive": "#4f5851",
+        "sigil": "#4D4153",
+        "khaki": "#6a5e52",
+        "moss": "#7b8165",
+        "mauve": "#9a8c98",
+        "taupe": "#a59e8c",
+        "latte": "#d4a373",
+        "cream": "#eaddca",
+        "mint": "#ecffdc",
+        "sand": "#f1eee4",
+        "petal": "#ffe4ee",
+        "blush": "#fff0fb",
+        "smoke": "#f5f5f5",
+        "powder": "#faf9f6",
+        "white": "#ffffff",
+        "coral": "#e76f51",
+        "terra": "#d65a3a",
+        "peach": "#ffa69e",
+        "candy": "#ffc4d6",
+        "mustard": "#ffde5c",
+        "teal": "#2a9d8f"
+    },
+    "EonGroups": {
+        "deepAnchors": {
+            "black": "#000000",
+            "pitch": "#090909",
+            "night": "#121212",
+            "coal": "#2b2b2b"
+        },
+        "stoneNeutrals": {
+            "graphite": "#4a4a4a",
+            "storm": "#4a5759",
+            "steel": "#5a646e"
+        },
+        "earthyTones": {
+            "olive": "#4f5851",
+            "khaki": "#6a5e52",
+            "moss": "#7b8165",
+            "taupe": "#a59e8c",
+            "latte": "#d4a373"
+        },
+        "dustyChromatics": {
+            "sigil": "#4D4153",
+            "mauve": "#9a8c98"
+        },
+        "softNeutrals": {
+            "cream": "#eaddca",
+            "sand": "#f1eee4",
+            "smoke": "#f5f5f5",
+            "powder": "#faf9f6",
+            "white": "#ffffff"
+        },
+        "etherealPastels": {
+            "mint": "#ecffdc",
+            "petal": "#ffe4ee",
+            "blush": "#fff0fb",
+            "candy": "#ffc4d6",
+            "peach": "#ffa69e"
+        },
+        "vibrantAccents": {
+            "coral": "#e76f51",
+            "terra": "#d65a3a",
+            "mustard": "#ffde5c",
+            "teal": "#2a9d8f"
+        }
+    },
+    "metadata": {
+        "totalColors": 28,
+        "totalGroups": 7,
+        "generatedAt": "2025-07-21T20:50:16.120Z"
+    }
+}

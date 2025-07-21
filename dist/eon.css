@@ -1,0 +1,50 @@
+/*
+* EON COLOR PALETTE <@logstack/eon> - v1.0.0
+* ©️ 2025 by Logstack Labs, licensed under MIT
+* A refined collection of neutral tones with subtle accents for modern UI design.
+*
+* Generated: 2025-07-21T20:50:16.120Z
+*
+* AUTHOR: Muhammed A. Senghore <logstacklabs@gmail.com>
+* LINKS:
+*    - https://www.msio.me
+*    - https://logstack.dev/
+*    - https://github.com/logstacklabs/
+*
+* REFERENCES/ACKNOWLEDGEMENTS:
+*    - https://coolors.co/
+*    - https://opensource.org/license/mit
+*    - https://www.w3.org/TR/css-variables
+*    - https://www.w3.org/TR/selectors/#root-pseudo
+*    - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+*/
+:root {
+    --eo-black: #000000;
+    --eo-pitch: #090909;
+    --eo-night: #121212;
+    --eo-coal: #2b2b2b;
+    --eo-graphite: #4a4a4a;
+    --eo-storm: #4a5759;
+    --eo-steel: #5a646e;
+    --eo-olive: #4f5851;
+    --eo-sigil: #4D4153;
+    --eo-khaki: #6a5e52;
+    --eo-moss: #7b8165;
+    --eo-mauve: #9a8c98;
+    --eo-taupe: #a59e8c;
+    --eo-latte: #d4a373;
+    --eo-cream: #eaddca;
+    --eo-mint: #ecffdc;
+    --eo-sand: #f1eee4;
+    --eo-petal: #ffe4ee;
+    --eo-blush: #fff0fb;
+    --eo-smoke: #f5f5f5;
+    --eo-powder: #faf9f6;
+    --eo-white: #ffffff;
+    --eo-coral: #e76f51;
+    --eo-terra: #d65a3a;
+    --eo-peach: #ffa69e;
+    --eo-candy: #ffc4d6;
+    --eo-mustard: #ffde5c;
+    --eo-teal: #2a9d8f;
+}

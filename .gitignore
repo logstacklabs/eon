@@ -8,12 +8,19 @@
 .idea/dataSources/
 .idea/dataSources.local.xml
 
-package-lock.json
-vitest.config.js
-.eslintrc.js
+.env
 .DS_Store
+.eslintrc.js
+*.swp
 *.log
+*.test.js
+*.config.js
+*.tsbuildinfo
 .idea/
+.vscode/
 tests/
 __tests__/
+coverage/
 node_modules/
+vitest.config.js
+package-lock.json

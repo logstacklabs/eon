@@ -1,9 +1,9 @@
 /*
-* EON COLOR PALETTE <@logstack/eon> - v1.0.1
+* EON COLOR PALETTE <@logstack/eon> - v1.0.2
 * ©️ 2025 by Logstack Labs, licensed under MIT
 * A refined collection of neutral tones with subtle accents for modern UI design.
 *
-* Generated: 2025-07-21T20:57:27.942Z
+* Generated: 2025-08-07T19:51:41.889Z
 *
 * AUTHOR: Muhammed A. Senghore <logstacklabs@gmail.com>
 * LINKS:

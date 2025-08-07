@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "@logstack/eon",
     "description": "A refined collection of neutral tones with subtle accents for modern UI design.",
     "license": "MIT",
@@ -85,6 +85,6 @@
     "metadata": {
         "totalColors": 28,
         "totalGroups": 7,
-        "generatedAt": "2025-07-21T20:57:27.942Z"
+        "generatedAt": "2025-08-07T19:51:41.889Z"
     }
 }

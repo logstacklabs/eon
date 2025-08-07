@@ -74,7 +74,7 @@ removeEonColors();
 
 - ### CSS Variables
 ```css
-@import '@logstack/eon/css';
+@import '@logstack/eon/dist/eon.css';
 
 button {
     background: var(--eo-sigil);
@@ -92,7 +92,7 @@ button {
 @function eon-color-group($groupName) {}    // Returns an array of colors values from specified group.
 */
 @use 'sass:color';
-@use '@logstack/eon/scss' as eon;
+@use '@logstack/eon/dist/eon' as eon;
 
 @include eon.eon-colors();
 
